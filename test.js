@@ -1,17 +1,10 @@
-var average = 0;
+var a = 7;
+var b = 5;
 
-function getAverage (a,b){
-    var average = (a + b) / 2;
-    console.log(average);
-    return average;
-}
-
-var myResult = getAverage(7, 11);
-
-function logResult(){
-
-    console.log("the average is " + myResult + " inside the function");
-
-}
-
-logResult();
+console.log(a + b);
+console.log(typeof (a + b) );
+console.log(Math.round(7.8));
+console.log(Math.round(7.4));
+console.log(Math.floor(7.8));
+console.log(Math.ceil(7.2));
+console.log(Math.max(7, 4, 9, 8));
