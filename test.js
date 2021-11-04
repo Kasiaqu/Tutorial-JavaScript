@@ -1,17 +1,16 @@
-var birthday = new Date (1985, 0, 15, 11, 15, 25);
-var birthday2 = new Date (1985, 0, 15, 11, 15, 25);
+var content = document.getElementById("content");
+var button = document.getElementById("show-more");
 
-console.log(birthday.getMonth());
-console.log(birthday.getFullYear());
-console.log(birthday.getDate());
-console.log(birthday.getDay());
-console.log(birthday.getHours());
-console.log(birthday.getTime());
+button.onclick = function(){
 
-if(birthday.getTime() == birthday2.getTime()){
-    console.log("birthday are equal");
-} else{
-    console.log("birthday are not equal");
+    if(content.className == "open"){
+        content.className = "";
+        button.innerHTML = "Show More";
+    }
+
+else {
+    content.className = "open";
+    button.innerHTML = "Show Less";
 }
-
+}
  
